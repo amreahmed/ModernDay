@@ -1,40 +1,66 @@
+import React from 'react'
 
 const Navbar = () => {
   return (
-    <div className="navbar  py-[0] px-[2pc] bg-[#06050A] h-[85px]">
-      <div className="navbar-start">
-        <img
-          src="/Logo.svg"
-          alt=""
-          width={60}
-          height={55}
-          
-        />
+<div className="navbar bg-black px-10">
+  <div className="navbar-start">
+    <div className="dropdown">
+      <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden text-white">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
+        </svg>
       </div>
-      <div className="navbar-center  justify-start  lg:flex text-white">
-        <ul className="menu menu-horizontal px-1 lg:text-base font-bold">
-          <li key={1}>
-            <a>Insights</a>
-          </li>
-          <li key={2}>
-            <a>Services</a>
-          </li>
-          <li key={3}>
-            <a>Industries</a>
-          </li>
-          <li key={4}>
-            <a>Careers</a>
-          </li>
-          <li key={5}>
-            <a>About us</a>
-          </li>
-        </ul>
-      </div>
-      <div className="navbar-end">
-        <a className="btn btn-secondary">Contact Us</a>
-      </div>
+      <ul tabIndex={0} className="menu menu-sm dropdown-content bg-black rounded-box z-[1] mt-3 w-52 p-2 shadow text-white font-bold">
+        <li>
+          <a>Insights</a>
+        </li>
+        <li>
+          <a>Services</a>
+        </li>
+        <li>
+          <a>Industries</a>
+        </li>
+        <li>
+          <a>Careers</a>
+        </li>
+        <li>
+          <a>About us</a>
+        </li>
+      </ul>
     </div>
-  );
+    <img src="/Logo.svg" alt="aa" className='w-16 h-16'/>
+  </div>
+  <div className="navbar-center hidden lg:flex">
+    <ul className="menu menu-horizontal px-1 text-white font-bold">
+      <li>
+        <a>Insights</a>
+      </li>
+      <li>
+        <a>Services</a>
+      </li>
+      <li>
+        <a>Industries</a>
+      </li>
+      <li>
+        <a>Careers</a>
+      </li>
+      <li>
+        <a>About us</a>
+      </li>
+    </ul>
+  </div>
+  <div className="navbar-end">
+    <a className="btn">Contact Us</a>
+  </div>
+</div>
+
+
+  )
 }
 
 export default Navbar

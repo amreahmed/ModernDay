@@ -4,11 +4,11 @@ import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
-    <>
+    <div className="overflow-clip">
     <Navbar/>
       <Hero />
       <About/>
-    </>
+    </div>
       
   );
 }

@@ -13,7 +13,7 @@ const Hero = () => {
           {" "}
           <div className="max-w-md">
             <h1 className="mb-5 font-bold text-white font-karantina lg:text-5xl tracking-wider text-3xl">
-              Galactic powerhouse, transformation story
+              Galactic powerhouse, transformation story
             </h1>
             <p className="mb-5 text-white lg:font-light lg:text-lg text-xs">
               From the Depths of Space to a Galactic Economic Powerhouse - Witness Our Transformation and Success Story

@@ -8,8 +8,8 @@ const About = () => {
           Our <span className="text-secondary">survices</span>
         </h1>
       </div>
-      <div className="flex flex-wrap gap-20 py-10 justify-center items-center">
-       
+      <div className="flex flex-wrap gap-20 py-10 justify-center">
+      
           {[
             {
               title: "Educational and Training Support",
@@ -43,8 +43,7 @@ const About = () => {
             <Card title={title} key={title} description={description} image={image} />
           ))}
         </div>
-     
-    </div>
+      </div>
   );
 };
 
